@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreaFlow - Get Started</title>
+    <title>CreaFlow</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Slice 00: Landing Page -->
     <div id="landing-page" class="page">
         <div class="content-stack">
             <img src="https://storage.googleapis.com/creaflow-assets/logo.png" alt="CreaFlow Logo" class="logo">
             <h1 class="headline-medium">CreaFlow</h1>
             <p class="body-medium">Create with AI right in your browser</p>
-            <button class="filled-button">Start session</button>
+            <button id="start-session-btn" class="filled-button">Start session</button>
             <div id="uiLangPicker" class="segmented-button-container">
                 <button class="segmented-button active">EN</button>
                 <button class="segmented-button">DE</button>
@@ -20,6 +23,48 @@
             </div>
         </div>
     </div>
+
+    <!-- Slice 01: Scenario Picker Page -->
+    <div id="scenario-picker-page" class="page hidden">
+        <div class="app-bar-medium">
+            <span id="back-to-landing-btn" class="material-symbols-outlined icon-button">arrow_back</span>
+            <h2 class="app-bar-title">Choose scenario</h2>
+        </div>
+        <div class="lazy-column">
+            <div class="elevated-card">
+                <span class="material-symbols-outlined card-icon">favorite</span>
+                <div class="card-text">
+                    <div class="card-title">Story Co-Creation</div>
+                    <div class="card-subtitle">Rom-com in turns</div>
+                </div>
+            </div>
+            <div class="elevated-card">
+                <span class="material-symbols-outlined card-icon">psychology</span>
+                <div class="card-text">
+                    <div class="card-title">Positive Irony Coach</div>
+                    <div class="card-subtitle">Kind but witty</div>
+                </div>
+            </div>
+            <div class="elevated-card">
+                <span class="material-symbols-outlined card-icon">translate</span>
+                <div class="card-text">
+                    <div class="card-title">German Tutor B1</div>
+                    <div class="card-subtitle">Adaptive drills</div>
+                </div>
+            </div>
+            <div class="elevated-card">
+                <span class="material-symbols-outlined card-icon">groups</span>
+                <div class="card-text">
+                    <div class="card-title">Community Proposal</div>
+                    <div class="card-subtitle">Local democracy</div>
+                </div>
+            </div>
+        </div>
+        <button class="fab" title="New scenario">
+            <span class="material-symbols-outlined">add</span>
+        </button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
